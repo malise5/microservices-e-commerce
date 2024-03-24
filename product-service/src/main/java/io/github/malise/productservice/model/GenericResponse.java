@@ -1,6 +1,8 @@
 package io.github.malise.productservice.model;
 
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -15,6 +17,7 @@ public class GenericResponse<T> {
 
     private String msg;
     private boolean success;
+    @JsonInclude(value = JsonInclude.Include.NON_NULL)
     private T data;
     
 }
