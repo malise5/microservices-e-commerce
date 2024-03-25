@@ -1,13 +1,13 @@
 ### simple hello end point
-GET http://localhost:8082/api/hello HTTP/1.1
+GET http://localhost:8083/api/hello HTTP/1.1
 
 ### list of products
 # @name ProductList
-GET http://localhost:8082/api/products HTTP/1.1
+GET http://localhost:8083/api/products HTTP/1.1
 
 ### save products
 # @name Saveproduct
-POST  http://localhost:8082/api/products HTTP/1.1
+POST  http://localhost:8083/api/products HTTP/1.1
 Content-Type: application/json
 
 {
@@ -17,4 +17,4 @@ Content-Type: application/json
 
 ### Get products by Id
 # @name Saveproduct
-GET  http://localhost:8082/api/products/5 HTTP/1.1
+GET  http://localhost:8083/api/products/5 HTTP/1.1
