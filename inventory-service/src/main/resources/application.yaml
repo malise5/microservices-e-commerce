@@ -1,0 +1,12 @@
+server:
+  port: 6002
+spring:
+  application:
+    name: inventory-service
+  profiles:
+    active: qa,default
+  config:
+    import: optional:configserver:http://localhost:8888
+  
+ 
+
